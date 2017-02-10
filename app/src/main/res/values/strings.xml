@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">损余物资</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_login">LoginActivity</string>
+
+    <!-- login page -->
+    <string name="login">登录</string>
+    <string name="prompt_username">用户名</string>
+    <string name="prompt_password">密码</string>
+    <string name="toast_username_is_empty">请输入用户名</string>
+    <string name="toast_password_is_empty">请输入密码</string>
+
+    <!-- main page -->
+    <string name="activity_main_title">损余物资平台</string>
+    <string name="wait_for_receive_goods">待收货</string>
+    <string name="already_receive_goods">已收货</string>
+    <string name="screen">筛选</string>
+    <string name="load_data">下载数据</string>
+    <string name="title_activity_already_receive">AlreadyReceiveActivity</string>
+    <string name="title_activity_wait_receive">WaitReceiveActivity</string>
+
+    <!-- dialog part search layout -->
+    <string name="report_no">报案号</string>
+    <string name="vehicle_model">车型</string>
+    <string name="part_name">零件名称</string>
+    <string name="plate_no">车牌号</string>
+    <string name="create_date">创建日期</string>
+    <string name="take_goods_date">提货日期</string>
+    <string name="cancel">取消</string>
+    <string name="confirm">确认</string>
+    <string name="start_date">开始日期</string>
+    <string name="end_date">结束日期</string>
+    <string name="reset">重置</string>
+    <string name="search">查询</string>
+    <string name="title_activity_scan_result">ScanResultActivity</string>
+
+    <!-- scan result page -->
+    <string name="have_scan_part">已扫描零件</string>
+    <string name="upload_scan_data">上传数据</string>
+    <string name="scan">扫描</string>
+    <string name="manual_input">手动输入</string>
+    <string name="scan_tips">将二维码图片对准扫描框即可自动扫描</string>
+    <string name="msg_load_ing">加载中....</string>
+    <string name="label_report_no">报案号：&#160;&#160;&#160;&#160;</string>
+    <string name="label_vehicle_model">车型：&#160;&#160;&#160;&#160;&#160;&#160;</string>
+    <string name="prompt_manual_input_barcode">请输入条形码</string>
+    <string name="title_activity_not_found_part">NotFoundPartActivity</string>
+    <string name="scan_text">将二维码放入框内, 即可自动扫描</string>
+</resources>

@@ -1,0 +1,86 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/actionbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/actionbar_height"
+        android:background="@color/actionbar_bg_color" >
+
+        <include layout="@layout/commom_back_btn" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/have_scan_part"
+            android:textColor="@color/white"
+            android:textSize="@dimen/activity_title_text_size" />
+
+        <TextView
+            android:id="@+id/tv_manual_input"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/manual_input"
+            android:textColor="@color/white"
+            android:textSize="@dimen/activity_title_button_text_size" />
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/upload_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#e3e3e3"
+        android:paddingBottom="6dp"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="6dp" >
+
+        <Button
+            android:id="@+id/btn_upload_data"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/button_common_bg"
+            android:text="@string/upload_scan_data"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+        <ListView
+            android:id="@+id/scan_result_listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/upload_view"
+            android:layout_below="@+id/tv_all_layout" />
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tv_all_layout"
+        layout="@layout/empty_layout" />
+
+    <LinearLayout
+        android:id="@+id/tv_all_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/actionbar"
+        android:background="#e3e3e3"
+        android:orientation="horizontal"
+        android:padding="10dp" >
+
+        <TextView
+            android:id="@+id/tv_all"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="未找到"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</RelativeLayout>

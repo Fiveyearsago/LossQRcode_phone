@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.lossqrcode.ui.PhotoActivity">
+
+    <GridView
+        android:id="@+id/gridViewImage"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:numColumns="3"
+        android:layout_margin="5dp"
+        android:horizontalSpacing="10dp"
+        android:verticalSpacing="10dp"
+ />
+    <LinearLayout
+        android:id="@+id/upload_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#e3e3e3"
+        android:paddingBottom="6dp"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="6dp" >
+
+        <Button
+            android:id="@+id/btn_upload_photo"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/selector_login_button"
+            android:text="上传照片"
+            android:textColor="@color/white" />
+    </LinearLayout>
+</RelativeLayout>

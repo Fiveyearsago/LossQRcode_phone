@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/btn_bar_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="18dp"
+        android:textColor="@color/ab_textcolor_select"
+        android:background="@color/title_color" />
+
+    <Button
+        android:id="@+id/btn_bar_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@color/title_color"
+        style="@style/text_style" />
+    
+    <Button
+        android:id="@+id/btn_bar_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@color/title_color"
+        android:layout_marginRight="10dp"
+        android:lines="2"
+        android:textColor="@color/ab_textcolor_select"
+        android:textSize="18sp" />
+    
+    <Button
+        android:id="@+id/btn_bar_rightleft"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_centerVertical="true"
+        android:background="@color/title_color"
+        android:layout_toLeftOf="@id/btn_bar_right"
+        android:layout_marginRight="70dip"
+        android:layout_marginLeft="80dip"
+        android:lines="2"
+        android:textColor="#008000"
+        android:textSize="18sp" />
+
+</RelativeLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/actionbar_height"
+        android:background="@color/actionbar_bg_color" >
+
+        <include layout="@layout/commom_back_btn" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/already_receive_goods"
+            android:textColor="@color/white"
+            android:textSize="@dimen/activity_title_text_size" />
+
+        <TextView
+            android:id="@+id/tv_screen"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/screen"
+            android:textColor="@color/white"
+            android:textSize="@dimen/activity_title_button_text_size" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_all"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#e3e3e3"
+        android:gravity="center"
+        android:text="已收货数量"
+        android:textSize="16sp" 
+        android:padding="10dp"/>
+
+    <com.example.lossqrcode.ui.widget.LoadMoreListView
+        android:id="@+id/already_received_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </com.example.lossqrcode.ui.widget.LoadMoreListView>
+
+    <include layout="@layout/empty_layout" />
+
+</LinearLayout>

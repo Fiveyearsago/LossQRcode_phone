@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <declare-styleable name="SegmentButton">
+        <attr name="textSize" format="float" />
+        <attr name="textPressColor" format="color" />
+        <attr name="textNormalColor" format="color" />
+        <!-- Button内容以分号隔开 -->
+        <attr name="buttonContent" format="string" />
+    </declare-styleable>
+    
+    <declare-styleable name="HomeButton">  
+        <attr name="backcolor" format="integer" />  
+        <attr name="textsize" format="dimension" />  
+        <attr name="big" format="boolean" />  
+        <attr name="home" format="integer" />  
+        <attr name="text" format="string" />  
+    </declare-styleable>  
+
+</resources>

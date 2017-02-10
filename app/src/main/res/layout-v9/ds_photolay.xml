@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 自定义拍照功能 -->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <SurfaceView
+        android:id="@+id/ds_mSurView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:keepScreenOn="true"
+        android:visibility="visible" >
+    </SurfaceView>
+
+    <LinearLayout
+        android:id="@+id/contral_h"
+        android:layout_width="70dp"
+        android:layout_height="fill_parent"
+        android:layout_gravity="right|center_vertical"
+        android:background="#41494f"
+        android:orientation="vertical"
+        android:padding="5dip" >
+
+        <ImageView
+            android:id="@+id/ds_phGoOn"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:gravity="center_horizontal"
+            android:src="@drawable/ic_btn_upload_photo_u" >
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/ds_phReGo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:gravity="center_horizontal"
+            android:src="@drawable/ic_left_title_bar_close_u"
+            android:textSize="16sp"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/flash_image"
+            android:visibility="gone"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/flash_on" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="1dip"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/ds_phLocal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="80dip"
+            android:text="正在获取当前位置"
+            android:textColor="#FF0000"
+            android:textSize="14dip" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/contral_s"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="#41494f"
+        android:orientation="horizontal"
+        android:padding="5dip" >
+
+        <ImageView
+            android:id="@+id/ds_phGoOn_s"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:gravity="center_horizontal"
+            android:src="@drawable/ic_btn_upload_photo_u" >
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/ds_phReGo_s"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:gravity="center_horizontal"
+            android:src="@drawable/ic_left_title_bar_close_u"
+            android:textSize="16sp"
+            android:visibility="gone" />
+         <ImageView
+            android:id="@+id/flash_image1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:visibility="gone"
+            android:background="@drawable/flash_on" />
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<status>
+	<!-- 请求状态码对应的方法调用 -->
+	<statu type="requestMethod">
+		<item key="0100" value="loginAppService.login"/>
+		<item key="0200" value="remnantFitService.loadGoods"/>
+		<item key="0300" value="remnantFitService.upLoadFits"/>
+	</statu>
+	
+	<statu type="msg">
+		<!-- 登录 -->
+		<item key="01" value="登录验证"/>
+		<item key="0101" value="成功"/>
+		<item key="0102" value="用户名错误"/>
+		<item key="0105" value="密码错误"/>
+		<item key="0106" value="没有权限"/>
+		<!-- 提货人下载待确认列表 -->
+		<item key="02" value="提货人 下载 待确认列表"/>
+		<item key="0210" value="成功"/>
+		<item key="0220" value="该用户没有数据"/>
+		<!-- 提货人提交收货零件清单 -->
+		<item key="03" value="提货人 提交 收货零件的清单"/>
+		<item key="0310" value="成功"/>
+		<item key="0320" value="数据格式不正确"/>
+	
+		<!-- 错误码对应的信息说明 -->
+		<item key="99" value="密网络或XML格式异常"/>
+		<item key="9000" value="请求参数为空"/>
+		<item key="9001" value="请求状态码错误"/>
+		<item key="9002" value="平台内部数据错误"/>
+	</statu>
+</status>
